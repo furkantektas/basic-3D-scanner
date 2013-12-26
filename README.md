@@ -30,7 +30,7 @@ make
 ```
 
 ## How to use ##
-After a successful compiling process, you can run ScannerProje executable as below.
+After a successful compiling process, you can run ScannerProject executable as below.
 
 ```
 ./ScannerProject 

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.9)
 
-project(ScannerProje)
+project(ScannerProject)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-deprecated-declarations")
 
 FIND_PACKAGE(PCL 1.6 REQUIRED)
@@ -33,9 +33,9 @@ qt4_wrap_ui(qt_UIS_H ${qt_UIS})
 qt4_add_resources(qt_RESOURCES_QRC ${qt_RESOURCES})
 
 
-add_executable(ScannerProje ${qt_SOURCES}
+add_executable(ScannerProject ${qt_SOURCES}
     ${myproject_MOC}
     ${qt_RESOURCES_QRC}
     ${qt_UIS_H} rs232.c motordriver.cpp)
 
-target_link_libraries(ScannerProje ${QT_LIBRARIES} QVTK vtkRendering ${PCL_LIBRARIES})
+target_link_libraries(ScannerProject ${QT_LIBRARIES} QVTK vtkRendering ${PCL_LIBRARIES})

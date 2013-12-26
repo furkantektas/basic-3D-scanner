@@ -1,14 +1,9 @@
-3D Scanner with Kinect for XBOX
+3D Scanner with OpenNI and Point Cloud Library
 ========================
 
-This project uses Kinect for XBOX and a basic stepper motor for scanning objects 
-as 3D meshes and clouds.
+Basic 3D Scanner is a simple, cross-platform 3D scanning solution using OpenNI compatible devices Kinect for XBOX, Asus XMotion and Prime Sense Carmine. Basic 3D Scanner is developed as a term project for CSE395 lecture in Computer Engineering of Gebze Institute of Technology and should not be considered as a final 3D Scanner solution.
 
-For each iteration, clouds are saved as icp-#.pcd, final cloud is saved as 
-FinalCloud.pcd, final mesh is saved as FinalMesh.ply.
-
-Object will be scanned should be in the clipping box and the red line in the
-clipping box should be cross in the center of the object.
+For more information checkout the project's website: http://furkantektas.github.io/basic-3D-scanner/
 
 ## Requirements ##
 * PCL 1.6+
@@ -18,7 +13,7 @@ clipping box should be cross in the center of the object.
 * Eigen
 
 ## How to compile ##
-Create a folder named as build.
+Create a folder 'build'.
 ```
 mkdir build
 ```
@@ -38,5 +33,5 @@ make
 After a successful compiling process, you can run ScannerProje executable as below.
 
 ```
-./ScannerProje 
+./ScannerProject 
 ```
